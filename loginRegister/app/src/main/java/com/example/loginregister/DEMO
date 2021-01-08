@@ -1,0 +1,37 @@
+import android.app.*;
+import android.os.*;
+import android.widget.*;
+import android.view.*;
+import android.view.View.*;
+
+public class MainActivity extends Activity
+{
+    private TextView text1;
+    private EditText edit1;
+    private TextView text2;
+    private EditText edit2;
+    private Button but1;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState)
+    {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+
+        text1 = (TextView) findViewById(R.id. text1);
+        edit1 = (EditText) findViewById(R.id.edit1);
+        text2 = (TextView) findViewById(R.id.text2);
+        edit2 = (EditText) findViewById(R.id.edit2);
+        but1 = (Button) findViewById(R.id.but1);
+
+        but1. setOnClickListener(new View. OnClickListener(){
+            @Override
+            public void onClick (View v){
+                text1. setText(edit1. getText(). toString());{
+
+                }
+                text2. setText(edit2. getText(). toString());
+            }
+        });
+    }
+}
