@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:id="@+id/image"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/ButtonPF"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Profile"
+        app:backgroundTint="#17F3EB" />
+
+    <Button
+        android:id="@+id/ButtonLM"
+        android:layout_width="200dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="100dp"
+        android:layout_below="@+id/ButtonPF"
+        android:layout_centerHorizontal="true"
+        android:text="Passbook"
+        android:layout_marginTop="30dp"
+        app:backgroundTint="#17F3EB" />
+
+</RelativeLayout>
